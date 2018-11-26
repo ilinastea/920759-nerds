@@ -24,20 +24,68 @@
 			<h1 class="head-catalog">Магазин готовых шаблонов</h1>
 			<section class="catalog-filters">
 				<h2 class="visually-hidden">Фильтры</h2>
-				<h3 class="head-filter">Сетка:</h3>
-				<!--<ul class="grid-filter">
-					<li>Адаптированная</li>
-					<li>Фиксированная</li>
-					<li>Резиновая</li>
-				</ul>-->
-				<h3 class="head-filter">Особенности:</h3>
-				<!--<ul class="feature-filter">
-					<li>Слайдер</li>
-					<li>Блок преимуществ</li>
-					<li>Новости</li>
-					<li>Галерея</li>
-					<li>Корзина</li>
-				</ul>-->
+				<form name="filters" action="https://echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend>Сетка:</legend>
+						<ul class="grid-filter">
+							<li class="option-filter">
+								<label>
+									<input class="input-radio" type="radio" name="grid-option" value="adaptive" checked>
+									Адаптивная
+								</label>
+							</li>
+							<li class="option-filter">
+								<label>
+									<input class="input-radio" type="radio" name="grid-option" value="fixed">
+									Фиксированная
+								</label>
+							</li>
+							<li class="option-filter">
+								<label>
+									<input class="input-radio" type="radio" name="grid-option" value="rubber">
+									Резиновая
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<ul class="feature-filter">
+							<li class="option-filter">
+								<label>
+									<input class="input-checkbox" type="checkbox" name="feature-option" value="Slider" checked>
+									Слайдер
+								</label>
+							</li>
+							<li class="option-filter">
+								<label>
+									<input class="input-checkbox" type="checkbox" name="feature-option" value="Advantages">
+									Блок преимуществ
+								</label>
+							</li>
+							<li class="option-filter">
+								<label>
+									<input class="input-checkbox" type="checkbox" name="feature-option" value="News" checked>
+									Новости
+								</label>
+							</li>
+							<li class="option-filter">
+								<label>
+									<input class="input-checkbox" type="checkbox" name="feature-option" value="Gallery">
+									Галерея
+								</label>
+							</li>
+							<li class="option-filter">
+								<label>
+									<input class="input-checkbox" type="checkbox" name="feature-option" value="Basket">
+									Корзина								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button class="show-button" type="button">
+						Показать
+					</button>
+				</form>
 			</section>
 			<section class="catalog">
 				<ul class="catalog-items">
@@ -90,6 +138,29 @@
 						<a class="template-item"><img src="img/img-kvast.jpg" alt="Шаблон Кваст"></a>
 					</li>
 				</ul>
+			</section>
+			<section class="write-form">
+				<h4>Напишите нам</h4>
+				<form name="write-us" action="https://echo.htmlacademy.ru" method="post">
+					<label class="area-name">
+						Ваше имя:
+						<input type="text" name="field-name" placeholder="Имя Фамилия">
+					</label>
+					<label class="area-email">
+						Ваш e-mail:
+						<input type="text" name="field-email" placeholder="email@example.com">
+					</label>
+					<label class="area-letter">
+						Текст письма:
+						<textarea name="field-letter" placeholder="В свободной форме" rows="3"></textarea>
+					</label>
+					<button class="send-button" type="submit">
+						Отправить
+					</button>
+					<button class="send-button" type="button">
+						Закрыть
+					</button>
+				</form>
 			</section>
 		</main>
 		<footer class="main-footer">
