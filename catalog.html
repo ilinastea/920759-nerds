@@ -25,8 +25,8 @@
 			<section class="catalog-filters">
 				<h2 class="visually-hidden">Фильтры</h2>
 				<form name="filters" action="https://echo.htmlacademy.ru" method="get">
-					<fieldset>
-						<legend>Сетка:</legend>
+					<fieldset class="filter">
+						<legend class="filter-head">Сетка:</legend>
 						<ul class="grid-filter">
 							<li class="option-filter">
 								<label>
@@ -48,41 +48,42 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
-						<legend>Особенности:</legend>
+					<fieldset class="filter">
+						<legend class="filter-head">Особенности:</legend>
 						<ul class="feature-filter">
 							<li class="option-filter">
 								<label>
-									<input class="input-checkbox" type="checkbox" name="feature-option" value="Slider" checked>
+									<input class="input-checkbox" type="checkbox" name="feature-slider" value="Slider" checked>
 									Слайдер
 								</label>
 							</li>
 							<li class="option-filter">
 								<label>
-									<input class="input-checkbox" type="checkbox" name="feature-option" value="Advantages">
+									<input class="input-checkbox" type="checkbox" name="feature-advantages" value="Advantages">
 									Блок преимуществ
 								</label>
 							</li>
 							<li class="option-filter">
 								<label>
-									<input class="input-checkbox" type="checkbox" name="feature-option" value="News" checked>
+									<input class="input-checkbox" type="checkbox" name="feature-news" value="News" checked>
 									Новости
 								</label>
 							</li>
 							<li class="option-filter">
 								<label>
-									<input class="input-checkbox" type="checkbox" name="feature-option" value="Gallery">
+									<input class="input-checkbox" type="checkbox" name="feature-gallery" value="Gallery">
 									Галерея
 								</label>
 							</li>
 							<li class="option-filter">
 								<label>
-									<input class="input-checkbox" type="checkbox" name="feature-option" value="Basket">
-									Корзина								</label>
+									<input class="input-checkbox" type="checkbox" name="feature-basket" value="Basket">
+									Корзина
+								</label>
 							</li>
 						</ul>
 					</fieldset>
-					<button class="show-button" type="button">
+					<button class="show-button" type="submit">
 						Показать
 					</button>
 				</form>
@@ -142,11 +143,11 @@
 			<section class="write-form">
 				<h4>Напишите нам</h4>
 				<form name="write-us" action="https://echo.htmlacademy.ru" method="post">
-					<label class="area-name">
+					<label class="area-input">
 						Ваше имя:
 						<input type="text" name="field-name" placeholder="Имя Фамилия">
 					</label>
-					<label class="area-email">
+					<label class="area-input">
 						Ваш e-mail:
 						<input type="text" name="field-email" placeholder="email@example.com">
 					</label>
