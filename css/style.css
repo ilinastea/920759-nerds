@@ -139,11 +139,11 @@ a {
 	font-size: 55px;
 	line-height: 55px;
 	text-transform: none;
+	text-align: center;
 }
 
 /* .grid-filter,
-.feature-filter,
-.catalog-items {
+.feature-filter {
 	list-style: none;
 } */
 
@@ -169,6 +169,10 @@ a {
 	
 	background-color: #eeeeee;
 	border: none;
+}
+
+.catalog-items {
+	list-style: none;
 }
 
 .show-button:hover,
@@ -337,6 +341,18 @@ a {
 }
 
 /*сеточные стили каталог*/
+
+.head-catalog-block {
+	display: flex;
+	justify-content: center;
+	
+	background-color: #eeeeee;
+	margin: 0;
+	padding-top: 60px;
+	padding-bottom: 90px;
+	
+	outline: 2px solid red;
+}
 
 .catalog-block {
 	display: flex;
