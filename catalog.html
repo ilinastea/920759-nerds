@@ -24,15 +24,15 @@
 		</header>
 
 		<main>
-			<div class="head-catalog-block">
-			<h1 class="head-catalog">Магазин готовых шаблонов</h1>
+			<div class="header-catalog-block">
+				<h1 class="header-catalog">Магазин готовых шаблонов</h1>
 			</div>
 			<div class="catalog-block center">
 				<section class="catalog-filters">
 					<h2 class="visually-hidden">Фильтры</h2>
 					<form name="filters" action="https://echo.htmlacademy.ru" method="get">
 						<fieldset class="filter">
-							<legend class="filter-head">Сетка:</legend>
+							<legend class="filter-header">Сетка:</legend>
 							<ul class="grid-filter">
 								<li class="option-filter">
 									<input class="visually-hidden input-radio" type="radio" name="grid-option" id="filter-adaptive" value="adaptive" checked>
@@ -49,7 +49,7 @@
 							</ul>
 						</fieldset>
 						<fieldset class="filter">
-							<legend class="filter-head">Особенности:</legend>
+							<legend class="filter-header">Особенности:</legend>
 							<ul class="feature-filter">
 								<li class="option-filter">
 									<input class="visually-hidden input-checkbox" type="checkbox" name="feature-slider" id="filter-slider" checked>
@@ -73,25 +73,27 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button class="show-button" type="submit">
+						<button class="button-show" type="submit">
 							Показать
 						</button>
 					</form>
 				</section>
-				<section class="catalog">
+				<section class="catalog-cards">
 					<ul class="catalog-items">
 						<li class="item">
 							<article class="block-item">
-								<h4 class="head-item">Sedona</h4>
-								<p class="description-item">Информационный сайт для туристов</p>
-								<a class="button-buy" href="">9900 руб.</a>
+								<div class="description-item visually-hidden">
+									<h4>Sedona</h4>
+									<p>Информационный сайт для туристов</p>
+									<a class="button-buy" href="">9900 руб.</a>
+								</div>
 								<a class="template-item"><img src="img/img-sedona.jpg" alt="Шаблон Sedona"></a>
 							</article>
 						</li>
 						<li class="item">
 							<article class="block-item">
 								<div class="visually-hidden">
-									<h4 class="head-item">Pink App</h4>
+									<h4 class="header-item">Pink App</h4>
 									<p class="description-item">Продуктовый лендинг приложения для iOS и Android</p>
 									<a class="button-buy" href="">9900 руб.</a>
 								</div>
@@ -101,7 +103,7 @@
 						<li class="item">
 							<article class="block-item">
 								<div class="visually-hidden">
-									<h4 class="head-item">Barbershop</h4>
+									<h4 class="header-item">Barbershop</h4>
 									<p class="description-item">Сайт салона красоты. Для мужчин, да.</p>
 									<a class="button-buy" href="">9900 руб.</a>
 								</div>
@@ -111,7 +113,7 @@
 						<li class="item">
 							<article class="block-item">
 								<div class="visually-hidden">
-									<h4 class="head-item">Mishka</h4>
+									<h4 class="header-item">Mishka</h4>
 									<p class="description-item">Интернет-магазин вязаных игрушек</p>
 									<a class="button-buy" href="">9900 руб.</a>
 								</div>
@@ -121,7 +123,7 @@
 						<li class="item">
 							<article class="block-item">
 								<div class="visually-hidden">
-									<h4 class="head-item">A plus</h4>
+									<h4 class="header-item">A plus</h4>
 									<p class="description-item">Лендинг курсов повышения квалификации</p>
 									<a class="button-buy" href="">9900 руб.</a>
 								</div>
@@ -131,7 +133,7 @@
 						<li class="item">
 							<article class="block-item">
 								<div class="visually-hidden">
-									<h4 class="head-item">Кваст</h4>
+									<h4 class="header-item">Кваст</h4>
 									<p class="description-item">Промо-сайт производителя крафтового класса</p>
 									<a class="button-buy" href="">9900 руб.</a>
 								</div>
@@ -141,25 +143,25 @@
 					</ul>
 				</section>
 			</div>
-			<section class="write-form visually-hidden">
+			<section class="write-us-form visually-hidden">
 				<h4>Напишите нам</h4>
-				<form name="write-us" action="https://echo.htmlacademy.ru" method="post">
-					<label class="area-input">
-						Ваше имя:
-						<input type="text" name="field-name" placeholder="Имя Фамилия">
-					</label>
-					<label class="area-input">
-						Ваш e-mail:
-						<input type="text" name="field-email" placeholder="email@example.com">
-					</label>
-					<label class="area-letter">
+				<form class="write-us-fields" name="write-us" action="https://echo.htmlacademy.ru" method="post">
+					<p class="input-fields">
+						<label class="area-input" for="name">Ваше имя:</label>
+						<input type="text" name="field-name" id="name" placeholder="Имя Фамилия">
+					</p>
+					<p class="input-fields">
+						<label class="area-input" for="email">Ваш e-mail:</label>
+						<input type="text" name="field-email" id="email" placeholder="email@example.com">
+					</p>
+					<label class="area-letter" for="letter">
 						Текст письма:
-						<textarea name="field-letter" placeholder="В свободной форме" rows="3"></textarea>
 					</label>
+					<textarea name="field-letter" id="letter" placeholder="В свободной форме" rows="5"></textarea>
 					<button class="send-button" type="submit">
 						Отправить
 					</button>
-					<button class="send-button" type="button">
+					<button class="close-button" type="button">
 						Закрыть
 					</button>
 				</form>

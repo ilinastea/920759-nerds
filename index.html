@@ -48,21 +48,21 @@
 					</li>
 				</ul>
 			</section>
-			<section class="write-us-form">
+			<section class="write-us-form visually-hidden">
 				<h4>Напишите нам</h4>
 				<form class="write-us-fields" name="write-us" action="https://echo.htmlacademy.ru" method="post">
-					<label class="area-input">
-						Ваше имя:<br>
-						<input type="text" name="field-name" placeholder="Имя Фамилия">
-					</label>
-					<label class="area-input">
-						Ваш e-mail:<br>
-						<input type="text" name="field-email" placeholder="email@example.com">
-					</label>
-					<label class="area-letter">
+					<p class="input-fields">
+						<label class="area-input" for="name">Ваше имя:</label>
+						<input type="text" name="field-name" id="name" placeholder="Имя Фамилия">
+					</p>
+					<p class="input-fields">
+						<label class="area-input" for="email">Ваш e-mail:</label>
+						<input type="text" name="field-email" id="email" placeholder="email@example.com">
+					</p>
+					<label class="area-letter" for="letter">
 						Текст письма:
-						<textarea name="field-letter" placeholder="В свободной форме" rows="6"></textarea>
 					</label>
+					<textarea name="field-letter" id="letter" placeholder="В свободной форме" rows="5"></textarea>
 					<button class="send-button" type="submit">
 						Отправить
 					</button>
