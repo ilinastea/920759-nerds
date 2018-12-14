@@ -284,8 +284,6 @@ img {
 	margin-bottom: 35px;
 	
 	border: none;
-	
-	outline: 1px solid black;
 }
 
 .grid-filter {
@@ -309,7 +307,7 @@ img {
 	padding-left: 35px;
 	margin-bottom: 25px;
 
-	outline: 1px solid black;
+/* 	outline: 1px solid black; */
 }
 
 .option-filter label {
@@ -325,7 +323,7 @@ img {
 	position: absolute;
 	left: -35px;
 	top: -2px;
-
+	
 	width: 25px;
 	height: 25px;
 	
@@ -335,18 +333,24 @@ img {
 	opacity: 0.4;
 }
 
-.input-radio:checked + label:after {
+.input-radio:checked + label::after {
 	content: "";
 	position: absolute;
 	left: -35px;
 	top: -2px;
-
+	
 	width: 25px;
 	height: 25px;
 	
 	background-image: url("../img/radio-on.svg");
 	opacity: 0.4;
 }
+
+.input-radio:checked ~ label::before {
+	display: none;
+}
+
+
 
 .input-checkbox + label::before {
 	content: "";
@@ -363,11 +367,11 @@ img {
 	opacity: 0.4;
 }
 
-.input-checkbox:checked + label:after {
+.input-checkbox:checked ~ label::before {
 	content: "";
 	position: absolute;
 	left: -35px;
-	top: -1px;
+	top: -2px;
 
 	width: 27px;
 	height: 23px;
@@ -386,6 +390,12 @@ img {
 /* .option-filter label:disabled {
 	opacity: 0.3;
 } */
+
+
+.option-filter input[type="checkbox"],
+.option-filter input[type="radio"] {
+	display: none;
+}
 
 .button-show {
 	font: inherit;
@@ -450,11 +460,11 @@ img {
 	margin-right: 20px;
 	padding-top: 40px;
 	
-	/* outline: 1px dashed black; */
+	outline: 1px dashed black;
 }
 
-.template-item {
-	outline: 1px dashed green; /*wtf*/
+.template-item img {
+	vertical-align:bottom; /*исправление бага с появлением отступа снизу*/
 }
 
 .template-item::before {
@@ -482,6 +492,8 @@ img {
 	padding: 0px;
 	padding-left: 80px;
 	padding-right: 80px;
+	
+	outline: 1px dashed yellow;
 }
 
 .description-item h4 {
@@ -490,7 +502,7 @@ img {
 	line-height: 30px;
 	
 	margin: 0px;
-	padding-top: 35px;
+	padding-top: 25px;
 	
 	outline: 1px dashed black;
 }
@@ -501,11 +513,11 @@ img {
 	line-height: 18px;
 	text-transform: none;
 	
-/* 	padding-bottom: 10px; */
+	margin-bottom: 30px;
 	outline: 1px dashed black;
 }
 
-.description-item .button-buy {
+.button-buy {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
@@ -516,11 +528,22 @@ img {
 	
 	display: inline-block;
 	vertical-align: middle;
-	padding: 20px 60px;
-	margin-bottom: 35px;
+	padding: 16px 62px;
+	margin-bottom: 45px;
 }
 
+.button-buy:focus,
+.button-buy:hover {
+	background-color: #e74246;
+}
 
+.button-buy:active {
+	color: #e37376;
+
+	background-color: #d7373b;
+	box-shadow: 0px -2px #c13135;
+	outline: none;
+}
 
 /*футер*/
 
