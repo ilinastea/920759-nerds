@@ -350,8 +350,6 @@ img {
 	display: none;
 }
 
-
-
 .input-checkbox + label::before {
 	content: "";
 	position: absolute;
@@ -769,12 +767,17 @@ img {
 .close-button {
 	content: "";
 	position:absolute;
-	top: -75px;
+	top: -80px;
 	left: 750px;
 	
-/* 	background-image: url("../img/close-cross.svg");
+	background-image: url("../img/close-cross.svg");
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 	width: 21px;
-	height: 21px; */
+	height: 21px;
+	
+	font-size: 0;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
 }
