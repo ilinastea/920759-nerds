@@ -14,7 +14,7 @@
 				<ul class="site-navigation">
 					<li><a href="studio.html">Студия</a></li>
 					<li><a href="clients.html">Клиенты</a></li>
-					<li><a href="catalog.html">Магазин</a></li>
+					<li><a class="active-menu">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<ul class="user-cart">
@@ -31,7 +31,24 @@
 				<section class="catalog-filters">
 					<h2 class="visually-hidden">Фильтры</h2>
 					<form name="filters" action="https://echo.htmlacademy.ru" method="get">
-						<fieldset class="filter">
+						<fieldset>
+							<legend class="filter-header">Стоимость:</legend>
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+									<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+								</div>
+							</div>
+						</fieldset>
+						
+						<fieldset>
 							<legend class="filter-header">Сетка:</legend>
 							<ul class="grid-filter">
 								<li class="option-filter">
@@ -48,7 +65,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<fieldset class="filter">
+						<fieldset>
 							<legend class="filter-header">Особенности:</legend>
 							<ul class="feature-filter">
 								<li class="option-filter">
