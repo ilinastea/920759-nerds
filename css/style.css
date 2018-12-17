@@ -67,7 +67,7 @@ img {
 	
 	padding-top: 50px;
 	
-	outline: 1px dashed red;
+	/* outline: 1px dashed red; */
 }
 
 .main-navigation a {
@@ -87,22 +87,28 @@ img {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
 	
-	width: 440px;
+	width: 438px;
 	padding: 0px;
 	margin: 0px;
 	
 	list-style: none;
-	outline: 1px dashed red;
+	
+	/* outline: 1px dashed red; */
 }
 
 .site-navigation a {
-	outline: 1px dashed black;
+	padding: 0;
+	margin: 0;
+	margin-top: 24px;
+	display: block;
+	
+	/* outline: 1px dashed black; */
 }
+
 .active-menu {
 	border-bottom: 2px solid #fb565a;
-	padding-bottom: 5px;
+	/* padding-bottom: 10px; */
 }
 
 .active-menu::hover,
@@ -111,16 +117,25 @@ img {
 }
 
 .user-cart {
-	position: relative;
+	display: block;
+	/* align-self: left; */
 	
-	align-self: center;
-	
-	max-width: 115px;
+	width: 115px;
 	margin: 0px;
-	padding-left: 40px;
+	padding-left: 41px;
 	
 	list-style: none;
-	outline: 1px dashed red;
+	
+	/* outline: 1px dashed red; */
+}
+
+.cart-icon {
+	position: relative;
+	margin-top: 24px;
+	display: block;
+	text-align: right;
+	
+	/* outline: 1px dashed black; */
 }
 
 .cart-icon::before {
@@ -139,6 +154,7 @@ img {
 }
 
 /*главная слайдер*/
+
 .container {
 	padding: 0px;
 	margin: 0px;
@@ -151,7 +167,7 @@ img {
 	
 	background-color: #eeeeee;
 	
-	outline: 2px solid blue;
+	/* outline: 2px solid blue; */
 }
 
 .slider-controls {
@@ -204,15 +220,15 @@ img {
 
 .slider-item {
 	display: none;
-	padding: 20px 0px 80px 0px;
+	padding: 13px 0px 80px 0px;
 }
 
 .slider-item:nth-child(1) {
 	background-image: url("../img/slide1.png");
 	background-repeat: no-repeat;
-	background-position: bottom right;
+	background-position: bottom right 31px;
 	
-	outline: 2px solid green;
+	/* outline: 2px solid green; */
 }
 
 .slider-item:nth-child(2) {
@@ -260,11 +276,11 @@ img {
 	font-size: 55px;
 	line-height: 55px;
 	text-transform: none;
-	
+	padding: 0;
 	max-width: 550px;
-	margin-bottom: 26px;
+	margin-bottom: 27px;
 	
-	outline: 1px dashed red;
+	/* outline: 1px dashed red; */
 }
 
 .slider-item p {
@@ -273,9 +289,9 @@ img {
 	text-transform: none;
 	
 	max-width: 430px;
-	margin-bottom: 40px;
+	margin-bottom: 37px;
 	
-	outline: 1px dashed red;
+	/* outline: 1px dashed red; */
 }
 
 .slider-button {
@@ -292,6 +308,8 @@ img {
 	display: inline-block;
 	width: 240px;
 	padding: 16px 0px;
+	
+	/* outline: 1px dashed black; */
 }
 
 /*главная услуги*/
@@ -309,7 +327,7 @@ img {
 	margin: 0px;
 	margin-top: 80px;
 	
-	outline: 1px dashed red;
+	/* outline: 1px dashed red; */
 }
 
 .services-item {
@@ -317,8 +335,12 @@ img {
 	margin-right: 100px;
 }
 
+.services-item:nth-child(3) {
+	margin-right: 60px;
+}
+
 .services-item img {
-		outline: 1px dashed red;
+	width: 300px;
 }
 
 .services-item h3 {
@@ -326,7 +348,7 @@ img {
 	font-size: 24px;
 	line-height: 30px;
 	
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 
 .services-item p {
@@ -336,9 +358,10 @@ img {
 	color: #283136;
 	text-transform: none;
 	
-	margin-bottom: 30px;
+	max-width: 260px;
+	margin-bottom: 32px;
 	
-	outline: 1px dashed red;
+	/* outline: 1px dashed red; */
 }
 
 .services-item .order-button {
@@ -419,27 +442,22 @@ img {
 	
 	margin: 0px;
 	padding-top: 70px;
-	padding-bottom: 110px;
-	
-	outline: 1px dashed red;
+	padding-bottom: 106px;
 }
 
 .header-catalog-block {
 	background-color: #eeeeee;
-	
-	outline: 1px dashed red;
 }
 
 .catalog-block {
 	display: flex;
 	justify-content: space-between;
-	margin: 0px;
-	padding-top: 55px;
+	padding-top: 52px;
 	
-	outline: 1px dashed red;
+	/* outline: 4px dashed red; */
 }
 
-/*каиалог фильтры стоимость*/
+/*каталог фильтры стоимость*/
 
 .range-controls {
 	position: relative;
@@ -455,7 +473,7 @@ img {
 	
 	border-radius: 5px;
 	
-	outline: 1px solid black;
+	/* outline: 1px solid black; */
 }
 
 .range-controls .scale {
@@ -531,6 +549,10 @@ img {
 
 /*каталог фильтры сетка+особенности*/
 
+.filters {
+	font: inherit;
+}
+
 .filter-header {
 	font-weight: 700;
 	font-size: 18px;
@@ -540,7 +562,7 @@ img {
 	margin: 0px;
 	/* margin-bottom: 20px; */
 	
-	outline: 1px solid black;
+	/* outline: 1px solid black; */
 }
 
 .catalog-filters {
@@ -550,26 +572,28 @@ img {
 .catalog-filters fieldset {
 	padding: 0px;
 	margin: 0px;
-	margin-bottom: 45px;
+	margin-bottom: 52px;
 	
 	border: none;
-	outline: 1px solid black;
+	/* outline: 1px solid black; */
 }
 
 .grid-filter {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
+	/* margin-top: 16px; */
 	
-	outline: 1px solid black;
+	/* outline: 1px solid black; */
 }
 
 .feature-filter {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
+	/* margin-top: 16px; */
 	
-	outline: 1px solid black;
+	/* outline: 1px solid black; */
 }
 
 .option-filter {
@@ -579,15 +603,16 @@ img {
 	text-transform: none;
 	
 	padding-left: 35px;
-	margin-top: 20px;
+	
 
-	outline: 1px solid black;
+	/* outline: 1px solid black; */
 }
 
 .option-filter label {
 	position: relative;
 	
 	display: block;
+	margin-top: 18px;
 	
 	cursor: pointer;
 }
@@ -663,7 +688,6 @@ img {
 	opacity: 0.3;
 } */
 
-
 .option-filter input[type="checkbox"],
 .option-filter input[type="radio"] {
 	display: none;
@@ -701,15 +725,16 @@ img {
 /*каталог карточки*/
 
 .catalog-cards {
-	width: 800px;
-	/* margin-top: 135px; */
+	width: 760px;
+	margin-top: 80px;
 	
-	outline: 2px solid red;
+	/* outline: 1px solid blue; */
 }
 
 .catalog-items {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	
 	padding: 0px;
 	margin: 0px;
@@ -720,7 +745,7 @@ img {
 .item {
 	padding: 0px;
 	
-	outline: 1px dashed blue;
+	/* outline: 1px dashed blue; */
 }
 
 .block-item {
@@ -728,15 +753,13 @@ img {
 	
 	width: 360px;
 	margin-bottom: 35px;
-	margin-left: 20px;
-	margin-right: 20px;
-	padding-top: 40px;
+	padding-top: 40px; /*для декорат браузера*/
 	
-	outline: 1px dashed black;
+	/* outline: 1px dashed black; */
 }
 
 .template-item img {
-	vertical-align:bottom; /*исправление бага с появлением отступа снизу*/
+	vertical-align: bottom; /*исправление бага с появлением отступа снизу*/
 }
 
 .template-item::before {
@@ -770,7 +793,7 @@ img {
 	padding-left: 80px;
 	padding-right: 80px;
 	
-	outline: 1px dashed yellow;
+	/* outline: 1px dashed yellow; */
 }
 
 .description-item h4 {
@@ -779,9 +802,10 @@ img {
 	line-height: 30px;
 	
 	margin: 0px;
-	padding-top: 25px;
+	margin-top: 28px;
+	margin-bottom: 18px;
 	
-	outline: 1px dashed black;
+	/* outline: 1px dashed black; */
 }
 
 .description-item p {
@@ -789,9 +813,11 @@ img {
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: none;
+	color: #666666;
 	
-	margin-bottom: 30px;
-	outline: 1px dashed black;
+	margin-bottom: 32px;
+	
+	/* outline: 1px dashed black; */
 }
 
 .button-buy {
@@ -806,7 +832,7 @@ img {
 	display: inline-block;
 	vertical-align: middle;
 	padding: 16px 62px;
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 }
 
 .button-buy:focus,
@@ -831,8 +857,6 @@ img {
 	
 	padding-top: 70px;
 	padding-bottom: 70px;
-	
-	outline: 1px solid red;
 }
 
 .social-links {
@@ -845,14 +869,11 @@ img {
 	margin: 0px;
 	
 	list-style: none;
-	outline: 1px dashed black;
 }
 
 .foot-text {
 	margin-left: 140px;
 	align-self: center;
-	
-	outline: 1px dashed black;
 }
 
 .main-footer h5 {
@@ -861,7 +882,6 @@ img {
 	line-height: 36px;
 	text-transform: none;
 	
-	padding-bottom: 15px;
 	margin: 0px;
 }
 
@@ -873,6 +893,7 @@ img {
 	
 	padding: 0px;
 	margin: 0px;
+	margin-top: 12px;
 }
 
 .button-social {
@@ -885,8 +906,6 @@ img {
 	border-radius: 40px;
 	
 	background-color: #e1e1e1;
-	
-/* 	outline: 2px solid blue; */
 }
 
 .button-social:hover,
@@ -910,14 +929,14 @@ img {
 	padding: 0px;
 	margin: 0px;
 	padding: 50px;
-
+	
 	/* display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center; */
 
 	
-	outline: 1px solid black;
+	/* outline: 1px solid black; */
 }
 
 .contacts h4 {
@@ -929,7 +948,7 @@ img {
 	margin: 0px;
 	margin-bottom: 30px;
 	
-	outline: 1px dashed black;
+	/* outline: 1px dashed black; */
 }
 
 .contacts p {
@@ -942,7 +961,7 @@ img {
 	margin: 0px;
 	margin-bottom: 20px;
 	
-	outline: 1px dashed black;
+	/* outline: 1px dashed black; */
 }
 
 .write-us-button {
@@ -963,7 +982,7 @@ img {
 	margin: 0px;
 	padding: 18px 40px;
 	
-	outline: 1px dashed black;
+	/* outline: 1px dashed black; */
 }
 
 .write-us-button:hover,
@@ -993,8 +1012,8 @@ img {
 	margin: 0px;
 	margin-bottom: 40px;
 	
-	outline: 1px solid black;
-	}
+	/* outline: 1px solid black; */
+}
 
 .area-input,
 .area-letter {
@@ -1007,7 +1026,7 @@ img {
 .area-input {
 	display: block;
 	
-	outline: 1px dashed blue;
+	/* outline: 1px dashed blue; */
 }
 
 .area-letter {
@@ -1019,7 +1038,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	
-	outline: 1px solid black;
+	/* outline: 1px solid black; */
 }
 
 .write-us-form input,
@@ -1059,7 +1078,7 @@ img {
 	
 	position:relative;
 	
-	outline: 2px dashed black;
+	/* outline: 2px dashed black; */
 }
 
 .write-us-fields input {
@@ -1082,7 +1101,7 @@ img {
 	padding: 0px;
 	margin: 0px;
 	
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 
@@ -1123,7 +1142,7 @@ img {
 .close-button {
 	content: "";
 	position:absolute;
-	top: -80px;
+	top: -75px;
 	left: 750px;
 	
 	background-image: url("../img/close-cross.svg");
