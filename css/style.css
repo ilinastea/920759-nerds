@@ -102,13 +102,11 @@ img {
 	margin: 0;
 	margin-top: 24px;
 	display: block;
-	
-	/* outline: 1px dashed black; */
 }
 
 .active-menu {
-	border-bottom: 2px solid #fb565a;
-	/* padding-bottom: 10px; */
+	border-bottom: 4px solid #eeeeee;
+	box-shadow: 0px 2px #fb565a;
 }
 
 .active-menu::hover,
@@ -279,8 +277,6 @@ img {
 	padding: 0;
 	max-width: 550px;
 	margin-bottom: 27px;
-	
-	/* outline: 1px dashed red; */
 }
 
 .slider-item p {
@@ -333,6 +329,7 @@ img {
 .services-item {
 	width: 300px;
 	margin-right: 100px;
+	margin-bottom: 82px;
 }
 
 .services-item:nth-child(3) {
@@ -348,6 +345,7 @@ img {
 	font-size: 24px;
 	line-height: 30px;
 	
+	margin-top: 22px;
 	margin-bottom: 16px;
 }
 
@@ -431,6 +429,75 @@ img {
 	outline: none;
 }
 
+/*главная о студии*/
+
+.studio-info img {
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	padding: 0px;
+	margin: 0;
+}
+
+.studio-projects {
+	position: relative;
+	
+	display: flex;
+	align-items: center;
+	
+	width: 1200px;
+	margin: 0px auto;
+	margin-bottom: 80px;
+	padding: 45px 0px 40px 0px;
+	box-sizing: border-box;
+	
+	list-style: none;
+}
+
+.studio-projects a {
+	display: block;
+	
+	width: 300px;
+	padding: 0px;
+	margin: 0px;
+	
+	text-align: center;
+	
+	opacity: 0.2;
+}
+
+.studio-projects::after {
+	content: "";
+	
+	position: absolute;
+	left: 20px;
+	bottom: 0px;
+	height: 2px;
+	width: 1160px;
+	background-color: #eeeeee;
+}
+
+.studio-projects li:not(:first-child)::before {
+	content: "";
+	
+	position: absolute;
+	top: 65px;
+	
+	height: 52px;
+	padding: 0px;
+	margin: 0px;
+	
+	border-right: 2px solid #eeeeee;
+}
+
+.studio-projects a:hover,
+.studio-projects a:focus {
+	opacity: 1;
+}
+
+.studio-projects a:active {
+	opacity: 0.1;
+}
+
 /*каталог общая сетка*/
 
 .header-catalog {
@@ -454,7 +521,7 @@ img {
 	justify-content: space-between;
 	padding-top: 52px;
 	
-	/* outline: 4px dashed red; */
+	outline: 2px dashed red;
 }
 
 /*каталог фильтры стоимость*/
@@ -520,6 +587,8 @@ img {
 	line-height: 22px;
 	
 	margin-bottom: 5px;
+	
+	/* outline: 1px solid red; */
 }
 
 .price-controls label {
@@ -527,6 +596,8 @@ img {
 	width: 50%;
 	
 	font-size: 16px;
+	
+	/* outline: 1px solid black; */
 }
 
 .price-controls input {
@@ -541,6 +612,19 @@ img {
 	border: none;
 	border-radius: 5px;
 	background: #f1f1f1;
+	
+	/* outline: 1px solid red; */
+}
+
+.price-controls input:hover {
+	background: #dfdfdf;
+}
+
+.price-controls input:focus {
+	border: 3px solid #dbdbdb;
+	border-radius: 5px;
+	background: #ffffff;
+	outline: none;
 }
 
 .max-price {
@@ -567,6 +651,8 @@ img {
 
 .catalog-filters {
 	width: 260px;
+	
+	outline: 2px dashed red;
 }
 
 .catalog-filters fieldset {
@@ -722,24 +808,49 @@ img {
 	outline: none;
 }
 
+/*каталог сортировка*/
+
+.catalog-sorting {
+	display: flex;
+	
+	outline: 1px solid black;
+}
+
+.catalog-sorting ul {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	
+	display: flex;
+	justify-content: space-between;
+	
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	
+	outline: 1px solid black;
+}
+
 /*каталог карточки*/
 
-.catalog-cards {
+/* .catalog-cards {
 	width: 760px;
 	margin-top: 80px;
 	
-	/* outline: 1px solid blue; */
-}
+	
+} */
 
 .catalog-items {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	
+	width: 760px;
 	padding: 0px;
 	margin: 0px;
+	margin-top: 80px;
 	
 	list-style: none;
+	outline: 2px solid red;
 }
 
 .item {
@@ -789,23 +900,19 @@ img {
 	position: absolute;
 	bottom: 0px;
 	
-	padding: 0px;
-	padding-left: 80px;
-	padding-right: 80px;
+	padding: 26px 80px 40px 80px;
 	
 	/* outline: 1px dashed yellow; */
 }
 
-.description-item h4 {
+.description-item .header-item {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
 	
 	margin: 0px;
-	margin-top: 28px;
-	margin-bottom: 18px;
 	
-	/* outline: 1px dashed black; */
+	outline: 1px dashed black;
 }
 
 .description-item p {
@@ -816,8 +923,6 @@ img {
 	color: #666666;
 	
 	margin-bottom: 32px;
-	
-	/* outline: 1px dashed black; */
 }
 
 .button-buy {
@@ -832,7 +937,6 @@ img {
 	display: inline-block;
 	vertical-align: middle;
 	padding: 16px 62px;
-	margin-bottom: 40px;
 }
 
 .button-buy:focus,
@@ -855,8 +959,10 @@ img {
 	flex-direction: row;
 	justify-content: flex-start;
 	
-	padding-top: 70px;
+	padding-top: 65px;
 	padding-bottom: 70px;
+	
+	/* outline: 1px dashed red; */
 }
 
 .social-links {
