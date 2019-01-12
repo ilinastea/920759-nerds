@@ -90,10 +90,17 @@
 					<li><a href=""><img src="img/logo-4.png" alt=""></a></li>
 				</ul>
 			</section>
-			<section class="center">
-				<a><img src="img/map.png" alt="Карта"></a>
-			</section>
-			<section class="write-us-form visually-hidden">
+			<div class="map">
+				<a><img src="img/map.png" alt="Карта" width="1440" height="416"></a>
+				<section class="contacts">
+					<h4>Nёrds design studio</h4>
+					<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a class="write-us-button" href="to-write-us.html">Напишите нам</a>
+				</section>
+			</div>
+			
+			<section class="write-us-form">
 				<h4>Напишите нам</h4>
 				<form class="write-us-fields" name="write-us" action="https://echo.htmlacademy.ru" method="post">
 					<p class="input-fields">
@@ -115,12 +122,6 @@
 						Закрыть
 					</button>
 				</form>
-			</section>
-			<section class="contacts visually-hidden">
-				<h4>Nёrds design studio</h4>
-				<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a class="write-us-button" href="to-write-us.html">Напишите нам</a>
 			</section>
 		</main>
 		
@@ -151,5 +152,22 @@
 				<p>Скидка 10% для друзей из социальных сетей</p>
 			</div>
 		</footer>
+		<script>
+			var writeUs = document.querySelector(".write-us-button");
+			var writeUsPopup = document.querySelector(".write-us-form");
+			var writeUsClose = document.querySelector(".close-button");
+			var writeName = writeUsPopup.querySelector("[name=field-name]");
+			
+			writeUs.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				writeUsPopup.classList.add("write-us-form-show");
+				writeName.focus();
+			});
+			
+			writeUsClose.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				writeUsPopup.classList.remove("write-us-form-show");
+			});
+		</script>
 	</body>
 </html>
