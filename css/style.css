@@ -340,7 +340,7 @@ img {
 	color: #283136;
 	text-transform: none;
 	
-	max-width: 260px;
+	max-width: 300px;
 	margin-bottom: 32px;
 }
 
@@ -413,11 +413,11 @@ img {
 
 /*главная о студии*/
 
-.studio-info img {
-	border-top: 2px solid #eeeeee;
-	border-bottom: 2px solid #eeeeee;
-	padding: 0px;
-	margin: 0px;
+.studio-info {
+	/* border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee; */
+/* 	padding: 0px;
+	margin: 0px; */
 }
 
 .studio-projects {
