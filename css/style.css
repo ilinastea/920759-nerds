@@ -989,7 +989,7 @@ img {
   padding: 0px;
   margin: 0px;
   margin-top: 50px;
-  margin-bottom: 145px;
+  /* margin-bottom: 145px; */
 
   list-style: none;
 }
@@ -1097,6 +1097,29 @@ img {
   box-shadow: 0px -2px #c13135;
   outline: none;
 }
+
+/*каталог странички*/
+
+.catalog-pages {
+  font-size: 16px;
+  line-height: 18px;
+  
+  list-style: none;
+  
+  display: flex;
+  width: 442px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 145px;
+  
+  outline: 1px solid red;
+}
+
+/* .catalog-pages li{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 16px 62px;
+} */
 
 /*футер*/
 
