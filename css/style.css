@@ -918,54 +918,70 @@ img {
 	margin: 0px;
 }
 
-.cards-sorting ul {
+.sorting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 360px;
+	box-sizing: border-box;
+}
+
+.sorting-types {
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 272px;
+	padding: 0px;
+	margin: 0px;
+
+	list-style: none;
+}
+
+.sorting-types  a {
+	color: #000000;
 	opacity: 0.3;
-	
-	position: relative;
+}
+
+.sorting-up-down {
+	list-style: none;
 	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	
-	width: 360px;
+	width: 42px;
 	padding: 0px;
-	padding-right: 90px;
 	margin: 0px;
-	margin-left: 62px;
 	box-sizing: border-box;
-	
-	list-style: none;
 }
 
-.cards-sorting ul::after {
-	content: "";
-	
-	position: absolute;
-	right: 30px;
-	
-	width: 11px;
-	height: 10px;
-	background-image: url("../img/icon-down-dir.svg");
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	opacity: 0.3;
+.sorting-types a:hover,
+.sorting-types a:focus {
+	opacity: 0.6;
 }
 
-.cards-sorting ul::before {
-	content: "";
-	
-	position: absolute;
-	right: 0px;
-	
-	width: 11px;
-	height: 10px;
-	background-image: url("../img/icon-up-dir.svg");
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	opacity: 0.3;
+.sorting-types a:active {
+	opacity: 1;
+}
+
+.icon-down, .icon-up {
+	opacity: 0.2;
+}
+
+.icon-down:hover,
+.icon-down:focus,
+.icon-up:hover,
+.icon-up:focus {
+	opacity: 0.6;
+}
+
+.icon-down:active,
+.icon-up:active {
+	opacity: 1;
 }
 
 /*каталог карточки*/
