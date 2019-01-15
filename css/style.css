@@ -555,6 +555,7 @@ img {
   position: relative;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   width: 1200px;
@@ -1169,8 +1170,8 @@ img {
 
 .social-links {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   width: 260px;
   padding: 0px;
