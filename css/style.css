@@ -989,7 +989,6 @@ img {
   padding: 0px;
   margin: 0px;
   margin-top: 50px;
-  /* margin-bottom: 145px; */
 
   list-style: none;
 }
@@ -1100,6 +1099,10 @@ img {
 
 /*каталог странички*/
 
+.catalog-pages a {
+  color: #000000;
+}
+
 .catalog-pages {
   font-size: 16px;
   line-height: 18px;
@@ -1107,19 +1110,51 @@ img {
   list-style: none;
   
   display: flex;
-  width: 442px;
+  width: 432px;
   padding: 0px;
   margin: 0px;
+  margin-top: 25px;
   margin-bottom: 145px;
-  
-  outline: 1px solid red;
 }
 
-/* .catalog-pages li{
+.catalog-pages a {
   display: inline-block;
   vertical-align: middle;
-  padding: 16px 62px;
-} */
+  text-align: center;
+
+  margin-right: 10px;
+  border: 2px solid #eeeeee;
+  border-radius: 3px;
+}
+
+.catalog-pages a:not(.page-next) {
+  padding: 14px 18px;
+}
+
+.page-next {
+  padding: 14px 74px;
+}
+
+.catalog-pages a:not(.page-active) {
+  background-color: #eeeeee;
+}
+
+.page-active {
+  background-color: #ffffff;
+}
+
+.catalog-pages a:hover,
+.catalog-pages a:focus {
+  background-color: #dfdfdf;
+  border: 2px solid #dfdfdf;
+}
+
+.catalog-pages a:active {
+  background-color: #d5d5d5;
+  color: #959595;
+  border: 2px solid #d5d5d5;
+  box-shadow: 0px -2px #bfbfbf;
+}
 
 /*футер*/
 
