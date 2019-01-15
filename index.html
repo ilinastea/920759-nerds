@@ -113,37 +113,38 @@
       </ul>
     </section>
     <div class="map">
-      <a><img src="img/map.png" alt="Карта" width="1440" height="416"></a>
+      <a><img src="img/map.png" alt="Карта" width="1200" height="416"></a>
       <section class="contacts">
         <h4>Nёrds design studio</h4>
         <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
         <a class="write-us-button" href="to-write-us.html">Напишите нам</a>
       </section>
+      <section class="write-us-form">
+        <h4>Напишите нам</h4>
+        <form class="write-us-fields" name="write-us" action="https://echo.htmlacademy.ru" method="post">
+          <p class="input-fields">
+            <label class="area-input" for="name">Ваше имя:</label>
+            <input type="text" name="field-name" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="input-fields">
+            <label class="area-input" for="email">Ваш e-mail:</label>
+            <input type="text" name="field-email" id="email" placeholder="email@example.com">
+          </p>
+          <label class="area-letter" for="letter">
+            Текст письма:
+          </label>
+          <textarea name="field-letter" id="letter" placeholder="В свободной форме" rows="5"></textarea>
+          <button class="send-button" type="submit">
+            Отправить
+          </button>
+          <button class="close-button" type="button">
+            Закрыть
+          </button>
+        </form>
+      </section>
     </div>
-    <section class="write-us-form">
-      <h4>Напишите нам</h4>
-      <form class="write-us-fields" name="write-us" action="https://echo.htmlacademy.ru" method="post">
-        <p class="input-fields">
-          <label class="area-input" for="name">Ваше имя:</label>
-          <input type="text" name="field-name" id="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="input-fields">
-          <label class="area-input" for="email">Ваш e-mail:</label>
-          <input type="text" name="field-email" id="email" placeholder="email@example.com">
-        </p>
-        <label class="area-letter" for="letter">
-          Текст письма:
-        </label>
-        <textarea name="field-letter" id="letter" placeholder="В свободной форме" rows="5"></textarea>
-        <button class="send-button" type="submit">
-          Отправить
-        </button>
-        <button class="close-button" type="button">
-          Закрыть
-        </button>
-      </form>
-    </section>
+    
   </main>
   
   <footer class="main-footer center">
@@ -173,22 +174,6 @@
       <p>Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
-  <script>
-    var writeUs = document.querySelector(".write-us-button");
-    var writeUsPopup = document.querySelector(".write-us-form");
-    var writeUsClose = document.querySelector(".close-button");
-    var writeName = writeUsPopup.querySelector("[name=field-name]");
-    
-    writeUs.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      writeUsPopup.classList.add("write-us-form-show");
-      writeName.focus();
-    });
-    
-    writeUsClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      writeUsPopup.classList.remove("write-us-form-show");
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

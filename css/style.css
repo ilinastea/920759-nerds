@@ -1,7 +1,7 @@
 body {
   margin: 0px;
 
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
@@ -96,10 +96,11 @@ img {
 }
 
 .site-navigation a {
-  padding: 0;
-  margin: 0;
-  margin-top: 24px;
   display: block;
+  
+  padding: 0px;
+  margin: 0px;
+  margin-top: 24px;
 }
 
 .active-menu {
@@ -107,8 +108,8 @@ img {
   box-shadow: 0px 2px #fb565a;
 }
 
-.active-menu::hover,
-.active-menu::focus {
+.active-menu:hover,
+.active-menu:focus {
   color: #000000;
 }
 
@@ -124,8 +125,10 @@ img {
 
 .cart-icon {
   position: relative;
-  margin-top: 24px;
+  
   display: block;
+  
+  margin-top: 24px;
   text-align: right;
 }
 
@@ -133,6 +136,7 @@ img {
   content: "";
 
   position: absolute;
+  
   top: 7px;
   left: 0px;
 
@@ -160,6 +164,7 @@ img {
 
 .slider-controls {
   position: absolute;
+  
   left: 50%;
   bottom: 104px;
   z-index: 100;
@@ -179,6 +184,7 @@ img {
   width: 18px;
   height: 18px;
   padding: 8px;
+  vertical-align: middle;
 
   border-radius: 50%;
   cursor: pointer;
@@ -188,12 +194,14 @@ img {
   content: "";
 
   position: absolute;
+  
+  width: 18px;
+  height: 18px;
   top: 8px;
   left: 8px;
   z-index: 1;
 
-  width: 18px;
-  height: 18px;
+  
 
   background: #ffffff;
 
@@ -208,6 +216,7 @@ img {
 
 .slider-item {
   display: none;
+  
   padding: 13px 0px 80px 0px;
 }
 
@@ -262,8 +271,9 @@ img {
   font-size: 55px;
   line-height: 55px;
   text-transform: none;
-  padding: 0;
+  
   max-width: 550px;
+  padding: 0px;
   margin-bottom: 27px;
 }
 
@@ -281,15 +291,17 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  text-align: center;
 
   background-color: #fb565a;
   border: none;
   border-radius: 3px;
 
   display: inline-block;
+  
   width: 240px;
-  padding: 16px 0px
+  padding: 16px 0px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /*главная услуги*/
@@ -297,15 +309,14 @@ img {
 .services-list {
   list-style: none;
 
-  text-align: left;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 
   padding: 0px;
   margin: 0px;
-  margin-top: 80px
+  margin-top: 80px;
+  text-align: left;
 }
 
 .services-item {
@@ -347,15 +358,17 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  text-align: center;
 
   border: none;
   border-radius: 3px;
 
   display: inline-block;
+  
   width: 160px;
   padding: 16px 40px;
   box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .order-red {
@@ -412,23 +425,23 @@ img {
 /*главная о студии*/
 
 .studio-info {
+  position: relative;
+  
   display: flex;
   justify-content: space-between;
 
   padding-top: 40px;
   margin-bottom: 72px;
-
-  position: relative;
 }
 
 .studio-info:before {
   content: "";
 
   position: absolute;
+  width: 1160px;
   left: 20px;
   top: 0px;
   height: 2px;
-  width: 1160px;
   background-color: #eeeeee;
 }
 
@@ -478,20 +491,20 @@ img {
 }
 
 .info-advantages li {
+  position: relative;
+  
   padding-left: 37px;
   margin-top: 26px;
-
-  position: relative;
 }
 
 .info-advantages li::before {
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: 0px;
   width: 25px;
   height: 2px;
+  top: 10px;
+  left: 0px;
 
   background-color: #fb565a;
 }
@@ -510,8 +523,8 @@ img {
 }
 
 .studio-about-2 h3 {
-  text-align: center;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .info-accuracy {
@@ -573,7 +586,6 @@ img {
   width: 300px;
   padding: 0px;
   margin: 0px;
-
   text-align: center;
 
   opacity: 0.2;
@@ -583,10 +595,11 @@ img {
   content: "";
 
   position: absolute;
+  width: 1160px;
+  height: 2px;
   left: 20px;
   top: 0px;
-  height: 2px;
-  width: 1160px;
+
   background-color: #eeeeee;
 }
 
@@ -594,10 +607,11 @@ img {
   content: "";
 
   position: absolute;
+  width: 1160px;
+  height: 2px;
   left: 20px;
   bottom: 0px;
-  height: 2px;
-  width: 1160px;
+  
   background-color: #eeeeee;
 }
 
@@ -605,9 +619,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 65px;
-
   height: 52px;
+  top: 65px;
   padding: 0px;
   margin: 0px;
 
@@ -630,11 +643,11 @@ img {
   font-size: 55px;
   line-height: 55px;
   text-transform: none;
-  text-align: center;
 
   margin: 0px;
   padding-top: 70px;
   padding-bottom: 106px;
+  text-align: center;
 }
 
 .header-catalog-block {
@@ -653,11 +666,11 @@ img {
   position: relative;
 
   height: 41px;
-  margin-top: 50px;
-  margin-bottom: 15px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 15px;
 
   background-color: #f1f1f1;
 
@@ -679,11 +692,11 @@ img {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
-  left: 0;
-
+  
   width: 4px;
   height: 4px;
+  top: 31px;
+  left: 0;
   padding: 0;
 
   border: 8px solid #ffffff;
@@ -713,18 +726,19 @@ img {
 .price-controls label {
   display: inline-block;
   width: 50%;
+  vertical-align: middle;
 
   font-size: 16px;
 }
 
 .price-controls input {
   font-size: 16px;
-  text-align: center;
   color: #283136;
 
   width: 60px;
   padding: 8px 10px;
   margin-left: 10px;
+  text-align: center;
 
   border: none;
   border-radius: 5px;
@@ -790,6 +804,7 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-transform: none;
+  
   margin-top: 18px;
   padding-left: 35px;
 }
@@ -804,12 +819,12 @@ img {
 
 .input-radio + label::before {
   content: "";
+  
   position: absolute;
-  left: -35px;
-  top: -2px;
-
   width: 25px;
   height: 25px;
+  left: -35px;
+  top: -2px;
 
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
@@ -819,12 +834,12 @@ img {
 
 .input-radio:checked + label::after {
   content: "";
+  
   position: absolute;
-  left: -35px;
-  top: -2px;
-
   width: 25px;
   height: 25px;
+  left: -35px;
+  top: -2px;
 
   background-image: url("../img/radio-on.svg");
   opacity: 0.4;
@@ -836,12 +851,12 @@ img {
 
 .input-checkbox + label::before {
   content: "";
+  
   position: absolute;
-  left: -35px;
-  top: -2px;
-
   width: 23px;
   height: 23px;
+  left: -35px;
+  top: -2px;
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -851,12 +866,12 @@ img {
 
 .input-checkbox:checked ~ label::before {
   content: "";
+  
   position: absolute;
-  left: -35px;
-  top: -2px;
-
   width: 27px;
   height: 23px;
+  left: -35px;
+  top: -2px;
 
   background-image: url("../img/checkbox-on.svg");
   opacity: 0.4;
@@ -879,15 +894,16 @@ img {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  text-align: center;
-
+  
   background-color: #eeeeee;
   border: none;
   border-radius: 3px;
 
   display: inline-block;
-  vertical-align: middle;
+  
   padding: 18px 90px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .button-show:hover,
@@ -917,6 +933,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   width: 360px;
   box-sizing: border-box;
 }
@@ -929,6 +946,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   width: 272px;
   padding: 0px;
   margin: 0px;
@@ -1012,11 +1030,12 @@ img {
 
 .template-item::before {
   content: "";
+  
   position: absolute;
-  top: 0px;
-
+  
   width: 360px;
   height: 40px;
+  top: 0px;
 
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
@@ -1047,9 +1066,10 @@ img {
   background-color: #eeeeee;
 
   position: absolute;
+  
   bottom: 0px;
-
   padding: 26px 80px 40px 80px;
+  
   display: none;
 }
 
@@ -1068,6 +1088,7 @@ img {
   text-transform: none;
   color: #666666;
 
+  margin-top: 20px;
   margin-bottom: 32px;
 }
 
@@ -1082,7 +1103,9 @@ img {
 
   display: inline-block;
   vertical-align: middle;
-  padding: 16px 62px;
+
+  width: 200px;
+  padding: 16px 0px;
 }
 
 .button-buy:focus,
@@ -1236,7 +1259,7 @@ img {
 .map {
   position: relative;
 
-  width: 1440px;
+  width: 1200px;
   margin: 0px auto;
 }
 
@@ -1244,6 +1267,7 @@ img {
   content: "";
 
   position: absolute;
+  
   top: 55px;
   left: 140px;
 
@@ -1257,7 +1281,7 @@ img {
 .contacts h4 {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 500px;
+  font-weight: 500;
 
   padding: 0px;
   margin: 0px;
@@ -1267,7 +1291,7 @@ img {
 .contacts p {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   text-transform: none;
 
   padding: 0px;
@@ -1289,9 +1313,8 @@ img {
   vertical-align: middle;
 
   width: 140px;
-  padding: 0px;
-  margin: 0px;
   padding: 18px 40px;
+  margin: 0px;
 }
 
 .write-us-button:hover,
@@ -1338,11 +1361,19 @@ img {
 }
 
 .write-us-form {
+  position: absolute;
+  
+  top: -130px;
+  left: 120px;
+  
   display: none;
 
   width: 960px;
   margin-left: auto;
   margin-right: auto;
+  
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .write-us-form-show {
@@ -1444,6 +1475,7 @@ img {
 .close-button {
   content: "";
   position:absolute;
+  
   top: -75px;
   left: 750px;
 
